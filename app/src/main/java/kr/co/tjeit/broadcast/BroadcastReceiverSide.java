@@ -18,6 +18,9 @@ public class BroadcastReceiverSide extends BroadcastReceiver {
 
 //        어떤 파일이 다운로드 되었는지 Toast로 출력
 
+        Intent mIntent = new Intent(context, MainActivity.class);
+        context.startActivity(mIntent);
+
         String fileName = intent.getStringExtra("fileName");
 
         Toast.makeText(context, fileName + "이(가) 다운로드 되었습니다.", Toast.LENGTH_SHORT).show();

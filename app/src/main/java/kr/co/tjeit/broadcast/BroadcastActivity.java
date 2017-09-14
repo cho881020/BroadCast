@@ -43,7 +43,7 @@ public class BroadcastActivity extends BaseActivity {
         IntentFilter intentFilter = new IntentFilter();
         intentFilter.addAction("kr.co.tjeit.broadcast.action.FILE_DOWNLOADED");
 
-        registerReceiver(mBroadcastReceiver, intentFilter);
+//        registerReceiver(mBroadcastReceiver, intentFilter);
 
     }
 
