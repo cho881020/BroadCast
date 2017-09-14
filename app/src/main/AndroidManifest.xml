@@ -16,6 +16,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <receiver android:name=".BroadcastReceiverSide">
+            <intent-filter>
+                <action android:name="kr.co.tjeit.broadcast.action.FILE_DOWNLOADED" />
+            </intent-filter>
+        </receiver>
+
     </application>
 
 </manifest>
